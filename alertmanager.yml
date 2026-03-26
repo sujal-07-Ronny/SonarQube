@@ -1,0 +1,10 @@
+global:
+  resolve_timeout: 5m
+
+route:
+  receiver: "mern-webhook"
+
+receivers:
+  - name: "mern-webhook"
+    webhook_configs:
+      - url: "http://host.docker.internal:4000/alert"
