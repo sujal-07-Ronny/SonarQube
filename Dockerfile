@@ -8,7 +8,7 @@ RUN apt-get update && \
     wget https://github.com/jeremylong/DependencyCheck/releases/download/v12.1.0/dependency-check-12.1.0-release.zip && \
     unzip dependency-check-12.1.0-release.zip && \
     mv dependency-check /opt/ && \
-    ln -s /opt/dependency-check/bin/dependency-check.sh /usr/bin/dependency-check && \
+    ln -s /opt/dependency-check/bin/dependency-check.sh /usr/bin/dependency-check.sh && \
     rm -rf dependency-check-12.1.0-release.zip
 
 # Set Java path
